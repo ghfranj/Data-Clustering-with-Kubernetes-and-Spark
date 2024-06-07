@@ -21,11 +21,10 @@ if __name__ == '__main__':
 
 
     spark.catalog.clearCache()
-    response = None
-    try:
-        response = requests.get('http://localhost:9000/data')
-    except:
-        response = requests.get('http://datamart:9000/data')
+
+    host = os.getenv('DATAMART_HOST')
+    url = f'http://{host}:9000/data'
+    response = requests.get(url)
         # df_from_oracle = spark.read.format("json").load("http://localhost:9000/data")
 
     # df_from_oracle = spark.read.format("json").load(response.json())

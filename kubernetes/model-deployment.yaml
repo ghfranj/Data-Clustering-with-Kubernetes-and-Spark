@@ -17,8 +17,9 @@ spec:
         image: ghfranjabour/model-service:latest
         ports:
         - containerPort: 4040
-      imagePullSecrets:
-      - name: dockerhub-secret
+      env:
+      - name: DATAMART_HOST
+        value: "datamart"
 ---
 apiVersion: v1
 kind: Service

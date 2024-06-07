@@ -26,8 +26,9 @@ object Main {
   }
 
   def storePreprocessedDataToOracle(df: Dataset[Row]): Unit = {
+    val dataSourceHostName = sys.env("DATA_SOURCE_HOSTNAME")
     // JDBC URL for Oracle database
-    val url = "jdbc:oracle:thin:@data_source:1521/ORCLPDB1"
+    val url = s"jdbc:oracle:thin:@$dataSourceHostName:1521/ORCLPDB1"
 
     // Write preprocessed data to Oracle database
     df.write.format("jdbc")
@@ -58,19 +59,21 @@ object Main {
       get {
         // Read data from Oracle
         val oracleData = readDataFromOracle(spark)
-
+        println("got data:")
+        oracleData.printSchema()
         // Send the data as a response
         complete(oracleData.toJSON.collect().mkString("[", ",", "]"))
       }
     }
 
-    val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
-    println(s"Server online at http://localhost:8080/")
+    val bindingFuture = Http().bindAndHandle(route, "0.0.0.0", 9000)
+    println(s"Server online at http://localhost:9000/")
   }
 
   def readDataFromOracle(spark: SparkSession): Dataset[Row] = {
+    val dataSourceHostName = sys.env("DATA_SOURCE_HOSTNAME")
     // JDBC URL for Oracle database
-    val url = "jdbc:oracle:thin:@data_source:1521/ORCLPDB1"
+    val url = s"jdbc:oracle:thin:@$dataSourceHostName:1521/ORCLPDB1"
 
     // Read data from Oracle table "foodfacts"
     val oracleData = spark.read.format("jdbc")
