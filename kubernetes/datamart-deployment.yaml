@@ -14,14 +14,17 @@ spec:
     spec:
       containers:
       - name: datamart
-        image: ghfranjabour/datamart-service:latest
+        image: ghfranjabour/datamart-service:v2
         ports:
         - containerPort: 9000
+        env:
+        - name: DATA_SOURCE_HOSTNAME
+          value: "data-source-service"
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: datamart-service
+  name: datamart
 spec:
   type: NodePort
   selector:
