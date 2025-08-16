@@ -20,7 +20,8 @@ This pipeline demonstrates how modern big data tools can be combined for **effic
 ## **Architecture**
 
 ```
-[Oracle DB] <---> [Data Mart (Scala)] <---> [Spark Model (Python)]
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ea0e53ac-5ef8-4b98-8f4c-33f390316b19" />
+
 ```
 
 * **Oracle DB:** Stores source data and serves as a central repository.
