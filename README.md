@@ -19,9 +19,7 @@ This pipeline demonstrates how modern big data tools can be combined for **effic
 
 ## **Architecture**
 
-
-<img width="750" height="512" alt="15a6395f-fbb1-4b6d-9040-6c3e919a3d66" src="https://github.com/user-attachments/assets/2f18b84b-857a-408b-8c24-72771868ffb7" />
-
+<img width="1401" height="433" alt="15a6395f-fbb1-4b6d-9040-6c3e919a3d66" src="https://github.com/user-attachments/assets/e591981c-510f-4cfe-ba67-e32813031939" />
 
 
 * **Oracle DB:** Stores source data and serves as a central repository.
