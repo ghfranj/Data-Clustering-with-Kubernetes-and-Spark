@@ -70,7 +70,6 @@ kubectl apply -f kubernetes/
 kubectl get deployments
 ```
 
-*Screenshot included: `deployments_running.png`*
 
 4. **Check services**
 
@@ -78,15 +77,12 @@ kubectl get deployments
 kubectl get services
 ```
 
-*Screenshot included: `services_running.png`*
-
 5. **Check pods**
 
 ```bash
 kubectl get pods
 ```
 
-*Screenshot included: `pods_running.png`*
 
 6. **Access Spark UI**
 
