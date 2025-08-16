@@ -19,11 +19,10 @@ This pipeline demonstrates how modern big data tools can be combined for **effic
 
 ## **Architecture**
 
-```
+
 <img width="1536" height="1024" alt="15a6395f-fbb1-4b6d-9040-6c3e919a3d66" src="https://github.com/user-attachments/assets/2f18b84b-857a-408b-8c24-72771868ffb7" />
 
 
-```
 
 * **Oracle DB:** Stores source data and serves as a central repository.
 * **Data Mart:** Receives model requests, pre-processes data, and interacts with the database.
