@@ -55,7 +55,7 @@ This pipeline demonstrates how modern big data tools can be combined for **effic
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/<yourusername>/SmartDataFlow.git
+git clone https://github.com/ghfranj/SmartDataFlow.git
 cd SmartDataFlow
 ```
 
