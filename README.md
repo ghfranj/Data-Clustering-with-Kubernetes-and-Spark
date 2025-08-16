@@ -20,7 +20,8 @@ This pipeline demonstrates how modern big data tools can be combined for **effic
 ## **Architecture**
 
 ```
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ea0e53ac-5ef8-4b98-8f4c-33f390316b19" />
+<img width="1536" height="1024" alt="15a6395f-fbb1-4b6d-9040-6c3e919a3d66" src="https://github.com/user-attachments/assets/2f18b84b-857a-408b-8c24-72771868ffb7" />
+
 
 ```
 
