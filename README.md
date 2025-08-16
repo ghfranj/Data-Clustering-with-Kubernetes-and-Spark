@@ -133,17 +133,5 @@ This workflow ensures **clean separation of responsibilities** between the datab
 *(Command: `kubectl get pods`)*
 <img width="963" height="158" alt="pods running all together" src="https://github.com/user-attachments/assets/5e4701dd-58d5-440c-9307-fe7600d45fcd" />
 
----
-
-## **Future Improvements**
-
-* Add support for additional databases and big data sources.
-* Implement advanced clustering metrics and alternative ML models.
-* Deploy the pipeline to cloud environments for production-scale workloads.
-* Add real-time streaming support for dynamic datasets.
-
----
-
-**Author:** Ghfran Jabour
 
 
